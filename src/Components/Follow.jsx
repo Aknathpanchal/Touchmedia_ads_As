@@ -7,8 +7,6 @@ const authToken = process.env.REACT_APP_TOKEN;
 
 function Follow() {
 
-  // const [follower, setFollower] = useState("");
-  // const [following, setfollowing] = useState("");
 
 let data =useSelector((state)=>state.userData.userList)
 // console.log(JSON.stringify(data) + "data")
@@ -23,30 +21,7 @@ useEffect(()=>{
 
 
 
-  // const getData = () => {
-  //   axios({
-  //     url: `${api}/?populate=*`,
-  //     method: "GET",
-  //     headers: {
-  //       AUTHORIZATION: `Bearer ${authToken}`,
-  //     },
-  //   })
-  //     .then((res) => {
-  //       setData(res.data.data);
-  //        console.log("hi", res.data);
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-  // const handelChose = (e) => {
-  //   e.preventDefault();
-  //   setuserid(e.target.value)
-  //   // getData();
-  //   const newdata = data.filter((elem) => elem.id != e.target.value);
-  //   setData(newdata);
-  // };
+
   const handelFollow = (e) => {
     // e.preventDefault();
     // setflag(!false)

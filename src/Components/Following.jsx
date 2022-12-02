@@ -15,24 +15,6 @@ function Following() {
   
   
 
-  // const getData = () => {
-  //   axios({
-  //     url: `${api}/?populate=*`,
-  //     method: "GET",
-  //     headers: {
-  //       AUTHORIZATION: `Bearer ${authToken}`,
-  //     },
-  //   })
-  //     .then((res) => {
-  //       setData(res.data.data);
-  //       // console.log("hi", res.data);
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
   return (
     <div
       style={{
