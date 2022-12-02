@@ -21,21 +21,11 @@ const getDataFailure = () => {
     type: GET_DATA_FAILURE,
   };
 };
-// export const getSingleBook = (data) => ({
-//   type: "GET_SINGLE_BOOK",
-//   payload: data,
-// });
+
 
 export const FetchData = () => (dispatch) => {
    dispatch(getDataLoading());
-//   axios
-//     .get("http://localhost:8080/books")
-//     .then((res) => {
-//       dispatch(getDataSuccess(res.data));
-//     })
-//     .catch((err) => {
-//     //   dispatch(getDataFailure());
-//       console.log(err);
+
 axios({
     url: `${api}/?populate=*`,
     method: "GET",

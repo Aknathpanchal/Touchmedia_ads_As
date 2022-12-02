@@ -6,11 +6,7 @@ const api = process.env.REACT_APP_API_URL;
 const authToken = process.env.REACT_APP_TOKEN;
 
 function Following() {
-  // const [data, setData] = useState([]);
-  // const [follower, setFollower] = useState("");
-  // const [following, setfollowing] = useState("");
   let data = useSelector((state) => state.userData.userList);
-  // console.log(JSON.stringify(data) + "data");
   const dispatch = useDispatch();
 
   useEffect(() => {
