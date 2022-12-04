@@ -60,7 +60,6 @@ function Following() {
             </div>
             <div>
 
-              {/* {elem.attributes.followers.data ? ( */}
                 {elem.attributes.followers.data.map((follow) => {
                   return (
                     <>
